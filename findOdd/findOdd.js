@@ -7,9 +7,8 @@
 // R: Return, Num
 function countOccurance(arr, x) {
   let count = 0;
-  let n = arr.length;
-  for (const idx in arr) {
-    if (arr[idx] == x) {
+  for (const num of arr) {
+    if (num == x) {
       count++;
     }
   }
@@ -26,6 +25,8 @@ function findOdd(A) {
     }
   }
 }
+
+const array = [1, 2, 5, 5, 10];
 
 findOdd([1, 1, 2, 2, 4, 4, 4]); // Return 4
 findOdd([0]); // Return 0
